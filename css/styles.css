@@ -37,3 +37,7 @@ body{
 .navbar-dark{
     background-color: #512d48; 
 }
+
+.margin10{
+    margin-left: 10px;
+}
