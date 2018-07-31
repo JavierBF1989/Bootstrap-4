@@ -87,6 +87,64 @@
             </div>
         </div>
     </div>
+    
+    <!-- Assignment 3 -->
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="content">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Reserve a Table</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group row">
+                            <label for="numberofguests" class="col-12 col-sm-3 col-form-label">Number of Guests</label>
+                            <div class="col-12 col-sm">
+                                <input type="radio" name="numberofguests" id="numberofguests1" autocomplete="off" class="margin10" checked> 1
+                                <input type="radio" name="numberofguests" id="numberofguests2" autocomplete="off" class="margin10"> 2
+                                <input type="radio" name="numberofguests" id="numberofguests3" autocomplete="off" class="margin10"> 3
+                                <input type="radio" name="numberofguests" id="numberofguests4" autocomplete="off" class="margin10"> 4
+                                <input type="radio" name="numberofguests" id="numberofguests5" autocomplete="off" class="margin10"> 5
+                                <input type="radio" name="numberofguests" id="numberofguests6" autocomplete="off" class="margin10"> 6
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="section" class="col-12 col-sm-3 col-form-label">Section</label>
+                            <div class="col-12 col-sm">
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success active">
+                                        <input type="radio" name="options" id="option1" autocomplete="off" checked> Non-Smoking
+                                    </label>
+                                    <label class="btn btn-danger">
+                                        <input type="radio" name="options" id="option2" autocomplete="off"> Smoking
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dateandtime" class="col-12 col-sm-3 col-form-label">Date and Time</label>
+                            <div class="col-12 col-sm-4">
+                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
+                            </div>
+                            <div class="col-12 col-sm-4">
+                                <input type="text" class="form-control" id="time" name="time" placeholder="Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="offset-sm-3">
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-primary btn-sm">Reserve</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Assignment 3 -->
 
     <header class="jumbotron">
         <div class="container">
@@ -102,17 +160,20 @@
                         <div class="col-12 col-sm-6 align-self-center">
                             <img src="img/logo.png" class="img-fluid">
                         </div>
-
+                        <!-- Assignment 3 -->
                         <div class="col col-sm align-self-center">
-                            <a class="btn btn-warning btn-sm btn-block" data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>"
-                                data-placement="bottom" href="#reservetable">Reserve Table</a>
+                            <a class="btn btn-warning btn-sm btn-block" data-toggle="modal" data-target="#reserveModal">Reserve Table</a>
                         </div>
+                        <!-- Assignment 3 -->
                     </div>
                 </div>
 
             </div>
         </div>
     </header>
+
+
+
 
     <div class="container">
         <div class="row row-content">
@@ -160,8 +221,8 @@
                             <span class="carousel-control-prev-icon"></span>
                         </a>
                         <a class="carousel-control-next" href="#mycarousel" role="button" data-slide="next">
-                                <span class="carousel-control-next-icon"></span>
-                            </a>
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -226,47 +287,6 @@
             </div>
         </div>
     </div>
-
-
-    <div class="row row-content justify-content-center" id="reservetable">
-        <div class="col-12 col-sm-8">
-            <div class="card">
-                <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
-                <div class="card-body">
-                    <form>
-                        <div class="form-group row">
-                            <label for="numberofguests" class="col-12 col-sm-3 col-form-label">Number of Guests</label>
-                            <div class="col-12 col-sm">
-                                <input type="radio" name="numberofguests" id="numberofguests1" autocomplete="off" class="margin10" checked> 1
-                                <input type="radio" name="numberofguests" id="numberofguests2" autocomplete="off" class="margin10"> 2
-                                <input type="radio" name="numberofguests" id="numberofguests3" autocomplete="off" class="margin10"> 3
-                                <input type="radio" name="numberofguests" id="numberofguests4" autocomplete="off" class="margin10"> 4
-                                <input type="radio" name="numberofguests" id="numberofguests5" autocomplete="off" class="margin10"> 5
-                                <input type="radio" name="numberofguests" id="numberofguests6" autocomplete="off" class="margin10"> 6
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="dateandtime" class="col-12 col-sm-3 col-form-label">Date and Time</label>
-                            <div class="col-12 col-sm-4">
-                                <input type="text" class="form-control" id="date" name="date" placeholder="Date">
-                            </div>
-                            <div class="col-12 col-sm-4">
-                                <input type="text" class="form-control" id="time" name="time" placeholder="Time">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <div class="col-12 offset-sm-3">
-                                <button type="submit" class="btn btn-primary">
-                                    Reserve
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-
 
     <footer class="footer">
         <div class="container">
@@ -337,11 +357,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
+
 </body>
 
 </html>
